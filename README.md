@@ -18,7 +18,7 @@ The output file will be named as **'diagram-' + INPUTFILE** . If you wish to cha
 
 # Run
 ```
-$ python diagram.py
+$ python3 diagram.py
 ```
 
 I also output to the command line the graph in [DOT](https://www.graphviz.org/doc/info/lang.html) language which can be used to change the output diagram easily.
