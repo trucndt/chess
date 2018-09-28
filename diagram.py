@@ -28,7 +28,12 @@ while True:
             token[i] = token[i][1:token[i].rfind(" ")]
             token[i] = str(i + 1) + ". " + token[i]
         if i == END - 1 or i == len(token) - 1:  # if last one then append name
-            token[i] += " " + first_game.headers["White"].split(',')[0] + " vs " + first_game.headers["Black"].split(',')[0]
+            result = ""
+            if first_game.headers["Result"][:2] == "1/":
+                result = "(1/2)"
+            else:
+                result = '(' + first_game.headers["Result"] + ')'
+            token[i] += " " + result + " " + first_game.headers["White"].split(',')[0] + " vs " + first_game.headers["Black"].split(',')[0]
     diagram.append(token[START - 1:END])
 
 diagram = [x for x in diagram if x]
