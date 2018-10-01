@@ -3,7 +3,7 @@ from graphviz import Graph
 
 START = 4
 END = 18
-INPUTFILE = "Nimzo 4 Bg5.pgn"
+INPUTFILE = "fixed-Nimzo-with-5.Nf4-E46.pgn"
 input = open(INPUTFILE, encoding="utf-8-sig")
 
 diagram = [[]]
@@ -73,6 +73,8 @@ for i in range(1, len(diagram)):
         for j in range(1, len(diagram[i])):
             dot.node(str(i) + str(j), diagram[i][j])
             dot.edge(str(i) + str(j - 1), str(i) + str(j))
+    elif longMatch == len(diagram[i]):
+        continue
     else: # draw only from longMatchStep + 1
         dot.node(str(i) + str(longMatchStep + 1), diagram[i][longMatchStep + 1])
         dot.edge(str(longMatchGame) + str(longMatchStep), str(i) + str(longMatchStep + 1))  # connect to previous game
