@@ -1,0 +1,85 @@
+﻿[Event "?"]
+[Site "?"]
+[Date "2022.01.31"]
+[Round "?"]
+[White "Vienna for Black"]
+[Black "White's 4th moves #Nc3"]
+[Result "*"]
+[ECO "D24"]
+[Annotator "LQL"]
+[PlyCount "34"]
+[EventDate "2021.??.??"]
+
+{[%evp 0,34,19,31,14,-17,-11,-11,6,-5,-1,-8,36,2,-1,6,11,9,2,8,-2,-41,-53,-53,
+-20,-25,-19,-19,-27,-51,-22,-44,-17,-5,-45,-3,-10]} 1. d4 Nf6 2. c4 e6 3. Nf3
+d5 4. Bg5 (4. Qc2 dxc4 5. Qxc4 (5. e3 a6 6. Bxc4 c5 7. O-O b5 8. Be2 Nbd7 9.
+Rd1 Bb7 10. dxc5 Bxc5 $15 {[%cal Ga8c8,Gd8b6]}) 5... Nbd7 6. g3 (6. Nc3 a6 7.
+a4 c5 {[%cal Gb7b5]}) (6. Bf4 c5 {tr}) 6... a6 7. Bg2 b5 8. Qc6 Rb8 9. Bf4 Nd5
+(9... Bb7 10. Qxc7 Qxc7 11. Bxc7 Bb4+ 12. Nbd2 Rc8 13. Bf4 Rc2 14. Rb1 Bxd2+
+15. Bxd2 O-O $44) 10. Bg5 Be7 11. Bxe7 Qxe7 12. Nc3 Bb7 13. Nxd5 Bxc6 14. Nxe7
+Kxe7 15. Rc1 Bd5 16. Rxc7 Rhc8 17. Ra7 Ra8 18. Rxa8 Bxa8 19. Kd2 Nf6 20. Ne1
+Bxg2 21. Nxg2 Rd8 22. e3 Ne4+ 23. Ke2 Rc8 24. Rg1 f5 25. Ne1 Rc1 26. Rg2 Ra1
+27. a3 Nd6 28. Nd3 Nc4 29. g4 g6 $11) (4. Qb3 c5 {try to play for advantage. 4.
+..dxc4 transposes to 4.Qc2 dxc4} 5. cxd5 (5. Bg5 dxc4 6. Qxc4 cxd4 7. Qxd4 Bd7)
+5... exd5 6. Bg5 c4 7. Qb5+ Nc6 8. Bxf6 gxf6 9. Nc3 Be6 10. e3 (10. Qxb7 Nb4
+$19) 10... a6 11. Qa4 b5 12. Qd1 Bd6 $15) (4. e3 Be7 (4... c5) (4... b6) 5. Nc3
+(5. b3 O-O 6. Bb2 c5 7. Bd3 cxd4 8. exd4 Nc6 9. O-O b6 {[%cal Gc8b7,Ga8c8]})
+5... O-O 6. Bd3 dxc4 7. Bxc4 a6 8. O-O (8. a4 c5 9. O-O cxd4 10. Nxd4 Bd7 $15 {
+[%cal Gb8c6]}) 8... b5 9. Bd3 Bb7 10. a3 c5 11. dxc5 Bxc5 12. b4 Be7 13. Bb2
+Nbd7 $11) (4. Bf4 dxc4 5. Qa4+ (5. e3 b5 6. a4 c6 $15 {[%cal Gf8b4,Gb8d7,Gc8b7,
+Ga7a6]}) 5... Nbd7 6. e3 (6. Qxc4 c5 7. e3 a6 8. Qa4 Nd5 9. Bg3 cxd4 $15) 6...
+Nd5 7. Bxc4 (7. Bg3 Bb4+ 8. Nbd2 c6 $15) 7... Bb4+ 8. Nc3 Nxf4 9. exf4 Bxc3+
+10. bxc3 O-O {[%cal Gd7b6,Gc7c5]} 11. Bd3 c5 12. O-O a6 $11 13. Qc2 g6 {[%cal
+Gd8c7,Gc5c4,Gb7b5,Gc8b7]}) (4. cxd5 exd5 5. Nc3 c6 6. Bg5 Be7 {with this move
+order black equalises easily by getting the Bc8 out} (6... Bf5 7. Qb3 Qb6 (7...
+Nbd7 $5 {risky, but good for rapid and blitz} 8. e4 (8. Qxb7 Rb8 9. Qxc6 Rxb2
+10. Bxf6 (10. e3 $2 Bb4 11. Rc1 O-O $19 {[%csl Rc3][%cal Gd8c8]}) 10... gxf6
+11. Nxd5 Qa5+ 12. Kd1 Bc2+ 13. Kc1 Ba3 14. Qc8+ Qd8 15. Nc7+ Ke7 16. Nd5+ Ke8
+$11) 8... Bxe4 9. Nxe4 Qe7 10. Qxb7 Rb8 11. Qxc6 Qxe4+ 12. Kd1 Be7 13. Qc2 O-O
+14. Bd3 Qg4 15. Rg1 Rfc8 16. Qe2 Bd6 17. h3 Qh5 18. Be3 $14) 8. Bxf6 gxf6 $44
+9. e3 Nd7 10. Kd2 {[%cal Gf1d3]}) 7. e3 (7. Qc2 g6 8. e3 Bf5 9. Bd3 Bxd3 10.
+Qxd3 Nbd7 11. O-O O-O 12. h3 Re8 13. Bf4 Nb6 $11 {[%csl Yd6]}) 7... Bf5 8. Bd3
+Bxd3 9. Qxd3 Nbd7 10. O-O O-O $11 {[%cal Gf6e8,Ge8d6,Gf6e4,Ge4d6,Gd8e7] best
+square for black's knights are d6 and d7/b6}) (4. Qa4+ $6 Bd7 5. Qb3 c5 6. cxd5
+exd5 7. dxc5 Bxc5 $15) (4. Nbd2 b6 5. g3 (5. e3 Bb7) 5... Bb7 6. Bg2 Be7 7. O-O
+O-O 8. b3 Nbd7 9. Bb2 c5 10. Rc1 Rc8 11. Rc2 (11. Qc2 dxc4 12. Nxc4 b5 13. Na3
+cxd4 14. Qb1 Qa5) 11... dxc4 12. Nxc4 b5 13. Ncd2 Qb6 14. Qa1 Rc7 15. Rfc1 Rfc8
+$11) 4... dxc4 5. Nc3 (5. e4 b5 6. a4 (6. e5 h6 7. Bh4 g5 8. Nxg5 hxg5 9. Bxg5
+Be7 10. exf6 Bxf6 11. Qf3 Bxg5 12. Qxa8 Bd7 $17 13. Nc3 c5 14. Rd1 cxd4 15.
+Rxd4 Qc7 16. Qf3 Bc6) 6... c6 7. Nc3 Qb6 (7... b4 8. Nb1 Ba6 9. Qc1 (9. e5 h6
+10. Bxf6 gxf6 11. exf6 c5 12. Nbd2 c3 13. bxc3 bxc3 14. Ne4 cxd4 15. Bb5+ Bxb5
+16. axb5 {1-0 (36) Dubov,D (2690)-Giri,A (2787) Moscow 2019} Qd5 17. Qxd4 Qxb5
+18. Nxc3 Bb4 19. O-O-O Qa5 20. Nb5 Na6 21. Qd7+ Kf8 22. Kb1 Ba3 23. Rd3 Qb4+
+24. Kc2 Qa4+ 25. Kd2 Bb4+ 26. Ke2 Kg8 27. Ne5 Qc2+ 28. Kf3 Rf8 29. Rhd1 h5 30.
+Qd4 Rh7 31. Qf4 Bc5 32. Nd4 Qa2 33. R1d2 Qd5+ 34. Ke2 Bb4 35. Ndc6 Qc5 36. Ne7+
+Kh8 {1-0 (36) Dubov,D (2690)-Giri,A (2787) Moscow 2019})) 8. Be2 (8. Bxf6 gxf6
+9. Be2 Bb7 10. O-O a6 11. d5 Nd7) (8. d5 Bc5) 8... Nbd7 (8... Bb7 9. O-O Nbd7 (
+9... a6 10. d5 (10. b3) 10... cxd5 11. Bxf6 gxf6 12. exd5 Nd7 13. axb5 axb5 14.
+Rxa8+ Bxa8) 10. a5 Qa6 11. Qc2) (8... b4 $6 9. a5 Qb7 (9... Qc7 10. Bxf6) 10.
+Na4 Nxe4 11. Bh4) 9. d5 (9. O-O b4) (9. Qc2 a6 10. O-O Bb7 11. Rfd1 Bb4 $15)
+9... exd5 (9... b4 10. dxe6 fxe6 11. a5 Qc7 12. Na4 Nxe4 13. O-O) 10. exd5 b4
+11. dxc6 Qxc6 12. Nb5 Bc5 13. O-O O-O (13... Bb7 14. Nbd4 Qd5 15. Rc1 c3 16.
+bxc3 bxc3 17. Bxf6 Nxf6 18. Bb5+ Kf8 19. Rxc3 g6 20. Bc4 Qd6 21. Rd3 Qf4 22.
+Qa1 Kg7 23. Bxf7 Kxf7 24. Ne2 Qf5 25. Ng3 Qf4 26. Ne5+ Ke6 27. Qa2+ Bd5 28.
+Rxd5 Nxd5 29. Nd3 Qd4 30. Ne2 Qg4 31. Nef4+ Kf6 32. Nxd5+ {1-0 (32) Mamedyarov,
+S (2767)-Kasimdzhanov,R (2657) Khanty-Mansiysk 2019}) 14. Bxc4 (14. Nbd4 Bxd4
+15. Nxd4 Qc5 16. Bf3 Qxg5 17. Bxa8 Qc5 $44 18. Rc1 Nb6 19. Bf3 Bd7 20. a5 Qxa5
+21. Ra1 Qc5 22. Rxa7 Na4 23. Rxa4 Bxa4 24. Qxa4 Qxd4 25. Qxb4 Qe5) 14... Bb7
+15. Nbd4 Qb6 16. a5 Qc7 17. Rc1 (17. a6 Bxf3 18. Nxf3 Bxf2+) 17... Bxf3 18.
+Qxf3 Ne5 19. Qf4 Bxd4 20. Qxd4 Qxa5 $11) (5. Nbd2 b5 6. a4 c6 7. e3 Bb4) (5.
+Qa4+ Nbd7 6. e3 (6. Qxc4 c5 7. Nc3 a6 8. dxc5 Bxc5 9. e3 b5 10. Qb3 Be7 $15)
+6... Be7 7. Bxc4 O-O 8. Be2 a6 9. O-O c5 10. Rd1 b5 11. Qc2 Qb6 $11) 5... a6 6.
+a4 (6. e4 b5 7. e5 h6 8. Bh4 g5 9. Nxg5 hxg5 10. Bxg5 Nbd7 11. exf6 Bb7 $36 {
+[%csl Rd4][%cal Gd7f6,Gf8h6]}) 6... Nc6 7. e3 (7. e4 Na5 8. Qc2 h6) 7... Na5 8.
+Ne5 (8. Nd2 c5 9. dxc5 (9. Bxf6 gxf6) 9... Bxc5 10. Bxc4 Bd7) (8. Be2 c5 9.
+dxc5 Qxd1+ 10. Rxd1 Bxc5 11. O-O Bb4 12. Na2 (12. Ne5 Bxc3 13. bxc3 b5) 12...
+Be7 13. Ne5 Nd7 14. Bxe7 Kxe7 15. Nxc4 Nxc4 16. Bxc4 b6 $11 {[%csl Ra4][%cal
+Gc8b7,Gh8c8,Gd7c5]}) 8... Bb4 9. Be2 (9. Nxc4 Qd5 10. Bxf6 Nxc4 11. Qb3 (11.
+Bxg7 Rg8 12. Bh6 (12. Qb3 Nxe3 13. Qxb4 Nc2+ 14. Kd2 Qf5 $19) 12... Nxb2 13.
+Qc2 Qc6 14. Kd2 e5 (14... Nxa4 15. Rxa4 Bxc3+ 16. Qxc3 Qxa4) 15. Qxb2 Ba5 $19)
+(11. Bxc4 Qxg2) 11... Nxe3 12. Qxb4 Nc2+ 13. Kd2 Nxb4 14. Nxd5 Nxd5 15. Bxg7
+Rg8 $15 {[%csl Rd4][%cal Gc8d7,Ge8c8,Gd7c6]}) 9... c5 10. O-O (10. dxc5 $2 Qd5
+$17) 10... cxd4 11. exd4 Nb3 12. Rb1 O-O 13. Ne4 (13. Bxc4 Nxd4) 13... Be7 14.
+Bxc4 Nxd4 15. Nxf6+ Bxf6 16. Bxf6 gxf6 17. Nf3 Nf5 $15 {[%cal Gc8d7,Ga8c8,
+Gd7c6,Gf5g7]} *
+

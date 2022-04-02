@@ -32,7 +32,7 @@ To print full usage:
 $ python3 diagram.py --help
 ```
 
-```bash
+```
 usage: diagram.py [-h] [-s START] [-e END] input
 
 Draw moves from a PGN file
