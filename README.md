@@ -73,6 +73,6 @@ To print full usage:
 $ python3 diagram.py --help
 ```
 
-# Output
+## Output
 
-A `diagram-<input>.gv.pdf` file storing the output diagram, and a `diagram-<input>.gv.dot` file storing the diagram in [DOT](https://www.graphviz.org/doc/info/lang.html) language.
+A `diagram-<input>.gv.pdf` file storing the output diagram, and a `diagram-<input>.gv` file storing the diagram in [DOT](https://www.graphviz.org/doc/info/lang.html) language.
