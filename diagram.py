@@ -6,8 +6,8 @@ from graphviz import Graph
 # Parse command-line arguments
 parser = argparse.ArgumentParser(description='Draw moves from a PGN file')
 parser.add_argument('input', default='', help='Input pgn file')
-parser.add_argument('-s', '--start', type=int, default=4, help='First move (default: 4)')
-parser.add_argument('-e', '--end', type=int, default=18, help='Last move (default: 18)')
+parser.add_argument('-s', '--start', type=int, default=4, help='First step (default: 4)')
+parser.add_argument('-e', '--end', type=int, default=18, help='Last step (default: 18)')
 args = parser.parse_args()
 
 INPUTFILE = args.input

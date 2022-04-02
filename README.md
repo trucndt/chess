@@ -1,4 +1,7 @@
-# Dependencies
+# Draw moves tree from PGN files
+Draw a tree of moves from PGN files using Graphviz
+
+## Dependencies
 
 Graphviz 2.42.2 https://graphviz.org/download/
 
@@ -10,7 +13,45 @@ Python libraries:
 * Can be installed using **pip**: `$ pip install chess graphviz`
 
 
-# Usage
+## Usage
+
+### Draw pgn tree
+Main source: **diagram2.py**
+```
+$ python3 diagram2.py input
+```
+- `input`: path to the .pgn file
+- For example: `$ python3 diagram2.py ViennaTest.pgn`
+
+By default, the program draws from the first move to the last move. To change this, specify the command-line arguments as follows:
+```
+$ python3 diagram2.py -s START -e END input
+```
+- `START`: the first step
+- `END`: the last step
+- For example: `$ python3 diagram2.py -s 4 -e 9 ViennaTest.pgn`
+
+To print full usage:
+```
+$ python3 diagram2.py --help
+```
+
+```
+usage: diagram2.py [-h] [-s START] [-e END] input
+
+Draw moves from a PGN file
+
+positional arguments:
+  input                 Input pgn file
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -s START, --start START
+                        First step (default: 1)
+  -e END, --end END     Last step (default: max)
+```
+
+### Draw mainlines of multiple games 
 Main source: **diagram.py**
 
 ```
@@ -23,28 +64,13 @@ By default, the program draws from the 4th move to the 18th move. To change this
 ```
 $ python3 diagram.py -s START -e END input
 ```
-- `START`: the first move
-- `END`: the last move
+- `START`: the first step
+- `END`: the last step
 - For example: `$ python3 diagram.py -s 3 -e 19 Nimzo-4-Bg5.pgn`
 
 To print full usage:
 ```
 $ python3 diagram.py --help
-```
-
-```
-usage: diagram.py [-h] [-s START] [-e END] input
-
-Draw moves from a PGN file
-
-positional arguments:
-  input                 Input pgn file
-
-optional arguments:
-  -h, --help            show this help message and exit
-  -s START, --start START
-                        First move
-  -e END, --end END     Last move
 ```
 
 # Output

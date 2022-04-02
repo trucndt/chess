@@ -55,8 +55,13 @@ class DrawGraphviz:
         self.dot.node_attr['shape'] = 'box'
 
     def __draw_func(self, node: GraphNode, parent: GraphNode or None):
-        self.dot.node(str(id(node)), node.name)
-        if parent is not None:
+        if node.step > self.m_end:
+            return
+
+        if node.step >= self.m_start:
+            self.dot.node(str(id(node)), node.name)
+
+        if parent is not None and node.step >= self.m_start + 1:
             self.dot.edge(str(id(parent)), str(id(node)))
 
         for child_node in node.child:
@@ -75,9 +80,9 @@ if __name__ == '__main__':
     # Parse command-line arguments
     parser = argparse.ArgumentParser(description='Draw moves from a PGN file')
     parser.add_argument('input', default='', help='Input pgn file')
-    parser.add_argument('-s', '--start', type=int, default=1, help='First move (default: 4)')
-    parser.add_argument('-e', '--end', type=int, default=9, help='Last move (default: 18)')
-    args = parser.parse_args(['ViennaTest.pgn'])
+    parser.add_argument('-s', '--start', type=int, default=1, help='First step (default: 1)')
+    parser.add_argument('-e', '--end', type=int, default=10000, help='Last step (default: max)')
+    args = parser.parse_args()
 
     INPUTFILE = args.input
     START = args.start
