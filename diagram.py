@@ -1,14 +1,22 @@
+import argparse
+import os
 import chess.pgn as pgn
 from graphviz import Graph
 
-START = 4
-END = 18
-INPUTFILE = "fixed-Nimzo-with-5.Nf4-E46.pgn"
+# Parse command-line arguments
+parser = argparse.ArgumentParser(description='Draw moves from a PGN file')
+parser.add_argument('input', default='', help='Input pgn file')
+parser.add_argument('-s', '--start', type=int, default=4, help='First move (default: 4)')
+parser.add_argument('-e', '--end', type=int, default=18, help='Last move (default: 18)')
+args = parser.parse_args()
+
+INPUTFILE = args.input
+START = args.start
+END = args.end
+
 input = open(INPUTFILE, encoding="utf-8-sig")
 
-diagram = [[]]
-for i in range(100):
-    diagram.append([])
+diagram = []
 
 # Read all games to diagram
 # diagram[i][j]: game i, step j
@@ -17,7 +25,7 @@ while True:
     if not first_game:
         break
     board = first_game.board()
-    moves = board.variation_san(first_game.main_line())
+    moves = board.variation_san(first_game.mainline_moves())
 
     token = moves.split(".")[1:]
     # print(token)
@@ -40,7 +48,7 @@ diagram = [x for x in diagram if x]
 # print(diagram)
 
 # Initiate graph
-dot = Graph(strict=True)
+dot = Graph(name='diagram-' + os.path.splitext(os.path.basename(INPUTFILE))[0], strict=True)
 dot.graph_attr['rankdir'] = 'LR'
 dot.node_attr['shape'] = 'box'
 
@@ -75,13 +83,13 @@ for i in range(1, len(diagram)):
             dot.edge(str(i) + str(j - 1), str(i) + str(j))
     elif longMatch == len(diagram[i]):
         continue
-    else: # draw only from longMatchStep + 1
+    else:  # draw only from longMatchStep + 1
         dot.node(str(i) + str(longMatchStep + 1), diagram[i][longMatchStep + 1])
         dot.edge(str(longMatchGame) + str(longMatchStep), str(i) + str(longMatchStep + 1))  # connect to previous game
         for j in range(longMatchStep + 2, len(diagram[i])):
             dot.node(str(i) + str(j), diagram[i][j])
             dot.edge(str(i) + str(j - 1), str(i) + str(j))
 
-dot.render('diagram-' + INPUTFILE, view=True)
+dot.render(view=True, format='pdf')
 print(dot.source)
 

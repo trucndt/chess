@@ -1,24 +1,52 @@
 # Dependencies
-* python-chess (https://github.com/niklasf/python-chess)
-* graphviz (https://github.com/xflr6/graphviz)
 
-Can be installed using **pip**:
+Graphviz 2.42.2 https://graphviz.org/download/
+
+Python 3.9
+
+Python libraries:
+* python-chess 1.9.0 (https://github.com/niklasf/python-chess)
+* graphviz 0.19.1 (https://github.com/xflr6/graphviz)
+* Can be installed using **pip**: `$ pip install chess graphviz`
+
+
+# Usage
+Main source: **diagram.py**
+
 ```
-pip install python-chess graphviz 
+$ python3 diagram.py input
+```
+- `input`: path to the .pgn file
+- For example: `$ python3 diagram.py Nimzo-4-Bg5.pgn`
+
+By default, the program draws from the 4th move to the 18th move. To change this, specify the command-line arguments as follows:
+```
+$ python3 diagram.py -s START -e END input
+```
+- `START`: the first move
+- `END`: the last move
+- For example: `$ python3 diagram.py -s 3 -e 19 Nimzo-4-Bg5.pgn`
+
+To print full usage:
+```
+$ python3 diagram.py --help
 ```
 
-# Parameters
-Source code: **diagram.py**
+```bash
+usage: diagram.py [-h] [-s START] [-e END] input
 
-You can change address to the input .pgn file by changing the variable **INPUTFILE** at _line 6_ 
+Draw moves from a PGN file
 
-The first and last moves to be appeared in the output diagram are defined by the variables START and END at _line 4_ and _5_, respectively.
+positional arguments:
+  input                 Input pgn file
 
-The output file will be named as **'diagram-' + INPUTFILE** . If you wish to change this name format, it will be on _line 78_
-
-# Run
+optional arguments:
+  -h, --help            show this help message and exit
+  -s START, --start START
+                        First move
+  -e END, --end END     Last move
 ```
-$ python3 diagram.py
-```
 
-I also output to the command line the graph in [DOT](https://www.graphviz.org/doc/info/lang.html) language which can be used to change the output diagram easily.
+# Output
+
+A `diagram-<input>.gv.pdf` file storing the output diagram, and a `diagram-<input>.gv.dot` file storing the diagram in [DOT](https://www.graphviz.org/doc/info/lang.html) language.
