@@ -39,11 +39,13 @@ class GraphNode:
 
 
 class DrawGraphviz:
+    """
+    Draw a tree with Graphviz
+    """
 
     m_start: int
     m_end: int
     dot: Graph
-    # node, parent: GraphNode or None, dot: Graph
 
     def __init__(self, save_name, start, end):
         self.args = args
@@ -71,9 +73,6 @@ class DrawGraphviz:
         self.__draw_func(root, None)
         self.dot.render(view=True, format='pdf')
 
-    def __print(self):
-        print('something')
-
 
 if __name__ == '__main__':
 
@@ -88,12 +87,14 @@ if __name__ == '__main__':
     START = args.start
     END = args.end
 
+    # read game
     input = open(INPUTFILE, encoding="utf-8-sig")
-
     first_game = pgn.read_game(input)
 
+    # construct a tree from the game
     root = GraphNode('start', 0, first_game)
     root.make_tree()
 
+    # draw tree
     diagram = DrawGraphviz(os.path.splitext(os.path.basename(INPUTFILE))[0], START, END)
     diagram.draw(root)
